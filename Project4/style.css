@@ -1,0 +1,122 @@
+/* === Reset & Base === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* === Typography === */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #1d1d1f;
+}
+
+/* === Navigation === */
+header {
+    width: 100%;
+    background-color: rgba(249, 249, 252, 0.92);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+    list-style: none;
+    padding-block: 0.7rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+nav li[aria-label="Apple"] i {
+    font-size: 1.2rem;
+}
+
+/* === Hero Section === */
+section {
+    width: 100%;
+    height: calc(100vh - 44px);
+    background-image: url(hero_apple_watch_series_11__bdz1mml4dx6q_largetall_2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.hero-logo img {
+    width: 30%;
+    max-width: 360px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+/* === Buttons === */
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #0076df;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background-color: #0063bb;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0076df;
+    border: 1px solid #0076df;
+}
+
+.btn-secondary:hover {
+    background-color: #0076df;
+    color: #fff;
+}
